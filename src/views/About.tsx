@@ -33,8 +33,31 @@ const About = () => {
           <h2 className='text-center xl:text-start text-4xl sm:text-5xl lg:text-[64px] font-bold text-textPrimary'>
             About <span className='text-secondary'> me</span>
           </h2>
+
+          <p className='text-center xl:text-start text-base sm:text-lg text-textSecondary'>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+            aliquam rem quos blanditiis sapiente deserunt sint quibusdam
+            voluptate delectus maxime! Voluptatum nam inventore possimus quidem,
+            cumque saepe debitis repellat impedit.
+          </p>
+
+          <div className='flex items-center justify-center xl:justify-start gap-6'>
+            <SocialMediaIcon imgSrc={facebookIcon} title='Facebook' />
+            <SocialMediaIcon imgSrc={instagramIcon} title='Instagram' />
+            <SocialMediaIcon imgSrc={twitterIcon} title='Twitter' />
+            <SocialMediaIcon imgSrc={youtubeIcon} title='Youtube' />
+          </div>
+        </div>
+        <div className='flex-1 flex items-center justify-center'>
+          <img
+            src={aboutIllustration}
+            alt=''
+            className='max-w-full sm:max-w-[401px]'
+          />
         </div>
       </div>
+
+      <div className='absolute bottom-0 left-0 w-full h-[1px] bg-divider' />
     </div>
   );
 };
